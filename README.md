@@ -1,58 +1,203 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+HRMaster – Human Resource Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+HRMaster is a modern, scalable Human Resource Management System (HRMS) built with Laravel 11, Tailwind CSS, and optionally AdminLTE.
+It helps organizations manage employees, departments, attendance, leave, payroll, and user roles efficiently.
 
-## About Laravel
+Table of Contents
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Overview
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Installation
 
-## Learning Laravel
+Database Setup
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+Modules
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Screenshots
 
-## Laravel Sponsors
+Future Enhancements
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Contributing
 
-### Premium Partners
+License
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Overview
 
-## Contributing
+HRMaster is designed for professional HR management. It provides a clean, responsive dashboard, quick actions, and easy navigation between modules.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+✅ Multi-office ready
+✅ Clean UI with Tailwind / AdminLTE
+✅ Secure authentication & role-based access
 
-## Code of Conduct
+Features
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+User Authentication (Login/Register/Password Reset/Email Verification)
 
-## Security Vulnerabilities
+Employee Management
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Department Management
+
+Attendance Tracking
+
+Leave Management
+
+Payroll Management
+
+Role-Based Access Control (RBAC)
+
+Clean, responsive UI (Tailwind / AdminLTE optional)
+
+Installation
+
+Clone the repository:
+
+git clone https://github.com/Dantechdevs/hrmaster.git
+cd hrmaster
+
+
+Install PHP dependencies:
+
+composer install
+
+
+Install Node dependencies:
+
+npm install
+
+
+Build frontend assets:
+
+npm run build
+
+
+Copy .env.example to .env and set your database:
+
+cp .env.example .env
+php artisan key:generate
+
+
+Run migrations and seed default data:
+
+php artisan migrate --seed
+
+
+Serve the application:
+
+php artisan serve
+
+Database Setup
+
+Default Departments:
+
+Human Resources
+
+Finance
+
+IT
+
+Marketing
+
+Sales
+
+Operations
+
+Default User (for testing):
+
+Email: test@example.com
+Password: password
+
+
+Run seeders:
+
+php artisan db:seed
+
+Modules
+Employees
+
+Add, edit, delete, view employees
+
+Assign to departments, track position & hire date
+
+Departments
+
+Create, edit, delete departments
+
+Assign employees to departments
+
+Attendance
+
+Daily attendance marking
+
+Track present/absent
+
+Reports
+
+Leave Management
+
+Employee leave requests
+
+Approval workflows
+
+Leave tracking
+
+Payroll
+
+Salary management
+
+Payroll generation
+
+Payment history
+
+Roles & Permissions
+
+Assign roles to users
+
+Control module access per role
+
+Screenshots
+
+Dashboard
+
+Employee Module
+
+Departments Module
+
+Attendance Module
+
+Replace these placeholders with real screenshots from your project before pushing to GitHub.
+
+Future Enhancements
+
+Multi-office support with office-level permissions
+
+Charts and reports on dashboard (attendance trends, payroll, leave)
+
+Notifications via email/SMS
+
+API for mobile app integration
+
+Contributing
+
+Fork the repository
+
+Create your feature branch:
+
+git checkout -b feature/my-feature
+
+
+Commit your changes:
+
+git commit -m "Add some feature"
+
+
+Push to your branch:
+
+git push origin feature/my-feature
+
+
+Open a Pull Request
 
 ## License
 
