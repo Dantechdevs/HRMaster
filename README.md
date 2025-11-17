@@ -1,203 +1,139 @@
-HRMaster – Human Resource Management System
+# HRMaster – Human Resource Management System
 
 HRMaster is a modern, scalable Human Resource Management System (HRMS) built with Laravel 11, Tailwind CSS, and optionally AdminLTE.
 It helps organizations manage employees, departments, attendance, leave, payroll, and user roles efficiently.
 
-Table of Contents
+## Table of Contents
+- Overview
+- Features
+- Installation
+- Database Setup
+- Modules
+- Screenshots
+- Future Enhancements
+- Contributing
+- License
 
-Overview
-
-Features
-
-Installation
-
-Database Setup
-
-Modules
-
-Screenshots
-
-Future Enhancements
-
-Contributing
-
-License
-
-Overview
-
+## Overview
 HRMaster is designed for professional HR management. It provides a clean, responsive dashboard, quick actions, and easy navigation between modules.
 
-✅ Multi-office ready
-✅ Clean UI with Tailwind / AdminLTE
-✅ Secure authentication & role-based access
+✅ Multi-office ready  
+✅ Clean UI with Tailwind / AdminLTE  
+✅ Secure authentication & role-based access  
 
-Features
+## Features
+- User Authentication (Login/Register/Password Reset/Email Verification)
+- Employee Management
+- Department Management
+- Attendance Tracking
+- Leave Management
+- Payroll Management
+- Role-Based Access Control (RBAC)
+- Clean, responsive UI (Tailwind / AdminLTE optional)
 
-User Authentication (Login/Register/Password Reset/Email Verification)
+## Installation
 
-Employee Management
-
-Department Management
-
-Attendance Tracking
-
-Leave Management
-
-Payroll Management
-
-Role-Based Access Control (RBAC)
-
-Clean, responsive UI (Tailwind / AdminLTE optional)
-
-Installation
-
-Clone the repository:
-
+### Clone the repository:
+```
 git clone https://github.com/Dantechdevs/hrmaster.git
 cd hrmaster
+```
 
-
-Install PHP dependencies:
-
+### Install PHP dependencies:
+```
 composer install
+```
 
-
-Install Node dependencies:
-
+### Install Node dependencies:
+```
 npm install
+```
 
-
-Build frontend assets:
-
+### Build frontend assets:
+```
 npm run build
+```
 
-
-Copy .env.example to .env and set your database:
-
+### Copy `.env.example` to `.env` and configure:
+```
 cp .env.example .env
 php artisan key:generate
+```
 
-
-Run migrations and seed default data:
-
+### Run migrations and seed default data:
+```
 php artisan migrate --seed
+```
 
-
-Serve the application:
-
+### Serve the application:
+```
 php artisan serve
+```
 
-Database Setup
+## Database Setup
 
-Default Departments:
+### Default Departments:
+- Human Resources
+- Finance
+- IT
+- Marketing
+- Sales
+- Operations
 
-Human Resources
+### Default User (For Testing)
+Email: **test@example.com**  
+Password: **password**
 
-Finance
-
-IT
-
-Marketing
-
-Sales
-
-Operations
-
-Default User (for testing):
-
-Email: test@example.com
-Password: password
-
-
-Run seeders:
-
+Run seeder:
+```
 php artisan db:seed
+```
 
-Modules
-Employees
+## Modules
 
-Add, edit, delete, view employees
+### Employees
+- Add, edit, delete, view employees
+- Assign to departments, track position & hire date
 
-Assign to departments, track position & hire date
+### Departments
+- Create, edit, delete departments
+- Assign employees to departments
 
-Departments
+### Attendance
+- Daily attendance marking
+- Track present/absent
+- Reports
 
-Create, edit, delete departments
+### Leave Management
+- Employee leave requests
+- Approval workflows
+- Leave tracking
 
-Assign employees to departments
+### Payroll
+- Salary management
+- Payroll generation
+- Payment history
 
-Attendance
+### Roles & Permissions
+- Assign roles to users
+- Control module access per role
 
-Daily attendance marking
+## Screenshots
+*(Replace these placeholders with actual images)*  
+- Dashboard  
+- Employee Module  
+- Departments Module  
+- Attendance Module  
 
-Track present/absent
+## Future Enhancements
+- Multi-office support with office-level permissions
+- Dashboard charts & analytics
+- Notifications via email/SMS
+- API for mobile app integration
 
-Reports
+## Contributing
+Fork the repository, create a branch, commit changes, push, and open a Pull Request.
 
-Leave Management
-
-Employee leave requests
-
-Approval workflows
-
-Leave tracking
-
-Payroll
-
-Salary management
-
-Payroll generation
-
-Payment history
-
-Roles & Permissions
-
-Assign roles to users
-
-Control module access per role
-
-Screenshots
-
-Dashboard
-
-Employee Module
-
-Departments Module
-
-Attendance Module
-
-Replace these placeholders with real screenshots from your project before pushing to GitHub.
-
-Future Enhancements
-
-Multi-office support with office-level permissions
-
-Charts and reports on dashboard (attendance trends, payroll, leave)
-
-Notifications via email/SMS
-
-API for mobile app integration
-
-Contributing
-
-Fork the repository
-
-Create your feature branch:
-
-git checkout -b feature/my-feature
-
-
-Commit your changes:
-
-git commit -m "Add some feature"
-
-
-Push to your branch:
-
-git push origin feature/my-feature
-
-
-Open a Pull Request
 
 ## License
 
